@@ -1,5 +1,5 @@
 {
-  "name": "csv-analyzer",
+  "name": "csv-analyzer-yasinkocyigit",
   "displayName": "CSV Analyzer",
   "description": "Analyze CSV files in VS Code with missing-value detection, automatic type inference, and column-level statistics.",
   "version": "0.1.0",
