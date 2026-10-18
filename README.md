@@ -1,4 +1,4 @@
-# VS Code CSV Analyzer Extension
+# CSV Data Analyzer - VS Code Extension
 
 A VS Code extension for exploring CSV files and understanding their column-level data quality.
 
