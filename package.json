@@ -1,9 +1,9 @@
 {
   "name": "csv-analyzer",
   "displayName": "CSV Analyzer",
-  "description": "Lightweight CSV file analyzer. Right-click on a CSV file and get data diagnostics, column-level missing value counts, means, and standard deviations in a premium Webview dashboard or Output Channel.",
+  "description": "Analyze CSV files in VS Code with missing-value detection, automatic type inference, and column-level statistics.",
   "version": "0.1.0",
-  "publisher": "yasin",
+  "publisher": "yasinkocyigit",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,15 +15,17 @@
   "homepage": "https://github.com/yasinkocyigit/csv-analyzer#readme",
   "keywords": [
     "csv",
+    "csv-analyzer",
     "data-analysis",
     "data-quality",
+    "missing-values",
     "statistics"
   ],
   "engines": {
     "vscode": "^1.75.0"
   },
   "categories": [
-    "Other"
+    "Data Science"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
