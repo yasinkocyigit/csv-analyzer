@@ -1,0 +1,66 @@
+{
+  "name": "csv-analyzer",
+  "displayName": "CSV Analyzer",
+  "description": "Lightweight CSV file analyzer. Right-click on a CSV file and get data diagnostics, column-level missing value counts, means, and standard deviations in a premium Webview dashboard or Output Channel.",
+  "version": "0.1.0",
+  "publisher": "yasin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yasinkocyigit/csv-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yasinkocyigit/csv-analyzer/issues"
+  },
+  "homepage": "https://github.com/yasinkocyigit/csv-analyzer#readme",
+  "keywords": [
+    "csv",
+    "data-analysis",
+    "data-quality",
+    "statistics"
+  ],
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "csv-analyzer.analyze",
+        "title": "Analyze CSV File",
+        "category": "CSV Analyzer"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "csv-analyzer.analyze",
+          "when": "resourceExtname == .csv",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "npm run compile && node --test ./out/analyzer.test.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.11.18",
+    "@typescript-eslint/eslint-plugin": "^5.47.0",
+    "@typescript-eslint/parser": "^5.47.0",
+    "eslint": "^8.30.0",
+    "typescript": "^4.9.4",
+    "@vscode/vsce": "^3.6.0"
+  }
+}

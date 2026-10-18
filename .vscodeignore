@@ -1,0 +1,14 @@
+.git
+.github
+.vscode
+.gitignore
+node_modules
+src
+out/**/*.map
+*.ts
+**/*.test.js
+README.md
+sample.csv
+.eslintrc.json
+tsconfig.json
+package-lock.json

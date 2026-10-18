@@ -1,0 +1,13 @@
+Name,Age,Salary,City,PerformanceScore
+Alice,28,55000,New York,8.5
+Bob,34,62000,San Francisco,9.0
+Charlie,,48000,Boston,7.2
+Diana,29,75000,,8.8
+Evan,40,92000,Chicago,NaN
+Frank,25,null,New York,6.0
+Grace,,51000,Boston,7.5
+Hank,31,68000,Austin,NA
+Ivan,45,110000,San Francisco,9.5
+Jenny,23,43000,,5.8
+Kevin,NaN,80000,Chicago,8.0
+Laura,38,87000,New York,N/A
